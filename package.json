@@ -3,15 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.4.3",
+    "autoprefixer-stylus": "^1.0.0",
+    "history": "^4.10.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-transition-group": "^4.3.0",
+    "stylus": "^0.54.7"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "styles": "stylus -u autoprefixer-stylus ./src/styles/style.styl -o ./src/styles/style.css",
+    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/styles/style.styl -o ./src/styles/style.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
   }
 }
